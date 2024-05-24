@@ -10,8 +10,8 @@ const userSchema = new Schema({
     required: true
   },
   OTP: {
-    type: String,
-    required: false
+    type: Array,
+    "default" : []
   }
 });// export the model
 module.exports = mongoose.model('User', userSchema);
